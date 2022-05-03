@@ -15,6 +15,9 @@ spring:
           uri: lb://ead-course-service
           predicates:
             - Path=/ead-course/**
+  output:
+    ansi:
+      enabled: always
 
 eureka:
   client:
